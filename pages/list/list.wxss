@@ -1,0 +1,45 @@
+.item {
+  width: 100%;
+  height: 200rpx;
+  padding: 20rpx;
+  border: 1px solid #ccc;
+  display: flex;
+  cursor: pointer;
+}
+
+.item image {
+  height:200rpx;
+  width: 180rpx;
+  margin-right: 20rpx
+}
+
+.item .text {
+  flex:1;
+}
+
+.item .text .title {
+  font-size: 36rpx;
+  margin-top:20rpx;
+  margin-bottom: 10rpx;
+  display: block;
+  font-style: '微软雅黑'
+}
+
+.item .text .info {
+  font-size: 22rpx;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+  color:#ccc;
+  font-style: '微软雅黑'
+}
+
+.item .text .directors {
+  font-size: 22rpx;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+}
+
+.item .text .rating {
+  font-size: 30rpx;
+  color: red
+}

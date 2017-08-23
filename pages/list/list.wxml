@@ -1,0 +1,18 @@
+<loading hidden="{{ !loading }}">加载中...</loading> 
+<navigator  wx:for='{{ list }}' wx:key='{{item.id}}' url='../item/item?id={{item.id}}'>
+  <view class='item'>
+    <image src='{{ item.images.small }}' mode='aspectFit' />
+    <view class='text'>
+      <text class='title'>{{ item.title }}</text>
+      <view class='info'>
+        <text class='original_title'>{{ item.original_title }} </text>
+        <text class='year'>{{ item.year }}</text>
+      </view>
+      <view class='directors'>
+        导演:
+        <text wx:for='{{ item.directors }}' wx:key='item.id'>{{ item.name }} </text>
+      </view>
+      <text class='rating'>{{ item.rating.average }}</text>
+    </view>
+  </view>
+</navigator>
